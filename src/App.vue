@@ -1,22 +1,12 @@
 <template>
-  <transition name="fade">
-      <i18n-t keypath="hello" tag="p">
-        <template #world>
-            <b>{{ $t("world") }}</b>
-        </template>
-      </i18n-t>
-  </transition>
+  <C1 />
 </template>
 
 <script>
+import C1 from "./components/C1";
 export default {
-  i18n: {
-    messages: {
-      en: {
-        hello: "Hello {world}",
-        world: "world!",
-      },
-    },
-  }
+  components: {
+    C1,
+  },
 };
 </script>
